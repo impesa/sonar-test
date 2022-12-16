@@ -1,0 +1,30 @@
+# Start by giving a name to your workflow
+name: Analyze branch
+
+# then define on which event, here a push
+on:
+  push:
+  # and the target with some regex to match our specific  branch names
+    branches:
+      - poc
+
+# We can now build our job
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Use an existing action, you can look in the market place to find what you need and how to use it, to setup the sonar scanner
+      - name: Setup sonar scanner
+        uses: warchant/setup-sonar-scanner@v1
+
+      - name: 'Run an analysis of the ${{ github.REF }} branch'
+        env:
+          # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: sonar-scanner
+          -Dsonar.host.url=http://34.135.185.246:9000
+          -Dsonar.login=sqp_f426bf606f493c5b3c4120340d75e6ff8383262d
+          -Dsonar.projectKey=impesa_sonar-test_AYUc6Aj1lBjGjZ6pkwHL
+          -Dsonar.scm.provider=git
