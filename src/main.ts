@@ -1,35 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
-const secretKey = `-----BEGIN PRIVATE KEY-----
-MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCb7WnyJiPCnAAv
-/i1xh1mbRgkUyv+3bIGscW4uWrY20+fDz8+quCCHZTk6Q0jdClpzoVIo1WcqFVpl
-zrx7a8VMYSLbC+IcK5U0Z4mjcCF3p7zVYgll8Q7Po/SdtOC+ae1ClKKTiQztb60w
-etsCpEP5OnRya9yKGlZoxrkcUq3sapPvjGMYmeCHv0KauNn4QbKF8cszC3qHKh3i
-QjQa52kdqOnIryt3ZPAyj9n2AN9JBrcvhhCRHZrzYxlYJk0zseeuQwkhYe1VTFdR
-rbF5CGjQRHhsipcMl86JCUPAFk0HEZH/E0Sx8xnfMMSL1cADPtsWq2TESx3AHPxD
-o80Jq5LZAgMBAAECggEADD4ILvBqp1lrNFlvBPZdBTFq/hxwFl0pEzp2raIGo2hg
-zoFu6xb4ytiaNSZaPqyU7HYyhq02o9m4Vrz0FHaiL3yC6ZLVxmNvnAUzC8d+gTAE
-xfYkCcJy6L+VMZqleJ3FeJBF8XJ1tuCpRuCmeF8gTR2XTfKFBrzJowFTQFOHf0PB
-iNm9X4LpfldChFpAJ7xK7or2Tm5cvb/iwX3piR+TcpYQJiOWqLNkf/p/88Efnrpp
-LdXddURJwGYbcBQjbUyxENDuadH9X8Yi1Vz4yaiaKEJ0vJx3NPdY93B0GyZno0ce
-5YgMsPJM9l7QL4/o91HLpi1qFC0187lRvAgzqLmQGQKBgQDJikFWj8v4JRaR2QzY
-mK/YKzWmzDOSZgWsflJRaLQzIbHj3/rZ2HG/prbG2EVn7VQ9lc72klYiMXEQ+LQ8
-rifCElzXwt7vZlIfmfCbaKj79g+4LjAmf5IMSysosdoO4biVzjhMQnstDQr0qKa8
-j5eLqwRCYziBYU4h+yix5iqiRQKBgQDGD9rfGR8NqX5VYYmNM91xb2mJQTjqPQWr
-wXzbZ9b92w2mDSLUG0c2DOFcoyOalxMsTFLPtWhFGwJI8SQgnpvdiuJTXMAT9erW
-wC5qCgjqTze2HZszgh/B9CnmovGzGrARU/VNnIT9VIJ5BroRyzqz5X4s7BDjUfu7
-MgVbnwcBhQKBgGgtzGqHeGM0IL+RmB9ahgNTCq/G/J2fmS06OykT25pWv5LQk+YK
-CXqNHgwZfX8kYhhXmR1CNb4FGrIwLVL0n16liVKKzByqIqdtNr/O0RM1dZi6X293
-IDK0pIGrtdFdgsIFUHqzHuMBy/j+OPpdq3OqGlCK44mVmALexoF3PfCVAoGAI0Y/
-nOxEc5J0RZCRhuxty/4jtaZAFLe5gtV6/ziHOb8Bt0kvoscY769rk6waczXk3Ebb
-mNKeN3CP/52y6XxWFibeGCq0qtlpccXYflo7LD/flDfBpHLQZSKvM7xhf5yJLwzc
-622s4dFjS1q/WNvxIIkG58lDWLkJNFW8To0MGmECgYA0QBICbJg4En8/fCvKMGg9
-a7MxqY6jR9ynODYbNCsQGp9nt9GEuOT0X6jidLcq4KERa7HEnMAPwvRZJxq+yhRl
-i2qjZc0EhKnAa1aandkqr+g+2ddpleRW2OfMK6a4TeEe1MLQz/+8gnrKVucJUoNr
-ar8FrLoI5dVugvIWcAs9wA==
------END PRIVATE KEY-----
-`;
+const secretKey = `Impesa123456&`;
 
 const password = `fd505804-3302-439b-8780-a4ab8f6083f8`;
 const password = `fd505804-3302-439b-8780-a4ab8f6083f8`;
