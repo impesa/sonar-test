@@ -3,7 +3,7 @@ steps:
     args:
     - '-Dsonar.host.url=http://34.135.185.246:9000'
     - '-Dsonar.login=sqp_f426bf606f493c5b3c4120340d75e6ff8383262d'
-    - '-Dsonar.projectKey=sonar-test'
+    - '-Dsonar.projectKey=impesa_sonar-test_AYUc6Aj1lBjGjZ6pkwHL'
     - '-Dsonar.sources=.'
   - name: 'gcr.io/cloud-builders/docker'
     args:
