@@ -20,9 +20,6 @@ jobs:
         uses: warchant/setup-sonar-scanner@v1
 
       - name: 'Run an analysis of the ${{ github.REF }} branch'
-        env:
-          # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: sonar-scanner
           -Dsonar.host.url=http://34.135.185.246:9000
           -Dsonar.login=sqp_f426bf606f493c5b3c4120340d75e6ff8383262d
