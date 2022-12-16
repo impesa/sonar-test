@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
-const secret = `-----BEGIN PRIVATE KEY-----
+const secretKey = `-----BEGIN PRIVATE KEY-----
 MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCb7WnyJiPCnAAv
 /i1xh1mbRgkUyv+3bIGscW4uWrY20+fDz8+quCCHZTk6Q0jdClpzoVIo1WcqFVpl
 zrx7a8VMYSLbC+IcK5U0Z4mjcCF3p7zVYgll8Q7Po/SdtOC+ae1ClKKTiQztb60w
@@ -31,10 +31,10 @@ ar8FrLoI5dVugvIWcAs9wA==
 -----END PRIVATE KEY-----
 `;
 
+const password = `fd505804-3302-439b-8780-a4ab8f6083f8`;
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   await app.listen(3000);
 }
 bootstrap();
-
-console.log('secret: ', secret);
