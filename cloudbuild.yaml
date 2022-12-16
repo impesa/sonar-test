@@ -1,0 +1,36 @@
+steps:
+  - name: 'gcr.io/$PROJECT_ID/sonar-scanner:latest'
+    args:
+    - '-Dsonar.host.url=http://34.135.185.246:9000'
+    - '-Dsonar.login=sqp_f426bf606f493c5b3c4120340d75e6ff8383262d'
+    - '-Dsonar.projectKey=sonar-test'
+    - '-Dsonar.sources=.'
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'build',
+        '--build-arg',
+        '_GOOGLE_CLOUD_PROJECT=${PROJECT_ID}',
+        '-t',
+        'gcr.io/$PROJECT_ID/ms-sonar-test:${BRANCH_NAME}-${SHORT_SHA}',
+        '.',
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/${PROJECT_ID}/ms-sonar-test:${BRANCH_NAME}-${SHORT_SHA}"]
+    id: "push-project"
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args: [
+        'run', 'deploy', 'ms-sonar-test',
+        '--image', "gcr.io/${PROJECT_ID}/ms-sonar-test:${BRANCH_NAME}-${SHORT_SHA}",
+        '--region', 'us-central1',
+        '--platform', 'managed',
+        '--timeout', '500s',
+        '--concurrency', '1',
+        '--memory', '512Mi',
+        '--allow-unauthenticated'
+    ]
+    waitFor: ["push-project"]
+
+images:
+  - 'gcr.io/$PROJECT_ID/ms-sonar-test:${BRANCH_NAME}-${SHORT_SHA}'
