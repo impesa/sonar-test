@@ -12,6 +12,7 @@ const connection = {
   host: 'localhost',
   user: 'admin',
   database: 'project',
+  password: 'otherpass',
   multipleStatements: true,
 };
 
