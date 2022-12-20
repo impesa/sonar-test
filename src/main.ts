@@ -4,7 +4,7 @@ import { AppModule } from './app.module';
 const secretKey = `Impesa123456&`;
 console.log(secretKey);
 
-// const password = `Impesa123456`;
+// const password = `some-secret-password`;
 // const password = `fd505804-3302-439b-8780-a4ab8f6083f8`;
 
 const connection = {
