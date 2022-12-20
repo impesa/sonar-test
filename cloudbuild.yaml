@@ -6,4 +6,8 @@ steps:
       - '-Dsonar.login=f2ace09cfb53fe5f26aa4c4697cf7b49147b4e4f'
       - '-Dsonar.projectKey=impesa_sonar-test'
       - '-Dsonar.sources=.'
+      - '-Dsonar.pullrequest.base=${_BASE_BRANCH}'
+      - '-Dsonar.pullrequest.branch=${BRANCH_NAME}'
+      - '-Dsonar.pullrequest.key=${$_PR_NUMBER}'
+
   - name: 'gcr.io/cloud-builders/docker'
