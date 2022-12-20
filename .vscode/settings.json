@@ -1,6 +1,6 @@
 {
     "sonarlint.connectedMode.project": {
-        "connectionId": "SonarLint-Visual Studio Code",
-        "projectKey": "impesa_sonar-test_AYUc6Aj1lBjGjZ6pkwHL"
+        "connectionId": "impesa",
+        "projectKey": "impesa_sonar-test"
     }
 }
