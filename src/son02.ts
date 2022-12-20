@@ -9,6 +9,8 @@ router.get('/', function (req, res, next) {
   exec(`git log --oneline ${image}`, (err, output) => {
     // Respond with HTTP 500 if there was an error
     if (err) {
+      console.log(err);
+
       res.status(500).send(err);
 
       return;

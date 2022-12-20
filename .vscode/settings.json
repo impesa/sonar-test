@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "impesa",
+        "projectKey": "impesa_sonar-test"
+    }
+}
