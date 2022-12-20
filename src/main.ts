@@ -6,7 +6,9 @@ async function bootstrap() {
     host: 'localhost',
     user: 'admin',
     database: 'project',
-    password: 'otherpass',
+
+    password: 'thisismysecret',
+
     multipleStatements: true,
   };
 
