@@ -12,6 +12,7 @@ const connection = {
   user: 'admin',
   database: 'project',
   password: 'mypassword05', // sensitive
+
   multipleStatements: true,
 };
 
