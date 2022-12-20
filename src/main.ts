@@ -12,7 +12,6 @@ const connection = {
   host: 'localhost',
   user: 'admin',
   database: 'project',
-  password: 'mypassword', // sensitive
   multipleStatements: true,
 };
 
