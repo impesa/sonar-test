@@ -15,6 +15,7 @@ router.get('/', function (req, res, next) {
 
       return;
     }
+
     // output the HTTP response
     res.send(output);
   });
