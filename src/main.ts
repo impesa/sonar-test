@@ -15,6 +15,13 @@ async function bootstrap() {
   console.log(connection);
   console.log(connection);
   console.log(connection);
+  console.log(connection);
+  console.log(connection);
+  console.log(connection);
+  console.log(connection);
+  console.log(connection);
+  console.log(connection);
+  console.log(connection);
 
   const app = await NestFactory.create(AppModule);
   await app.listen(3000);
