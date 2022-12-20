@@ -2,6 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
 const secretKey = `Impesa123456&`;
+
 console.log(secretKey);
 
 // const password = `some-secret-password`;
