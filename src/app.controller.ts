@@ -11,6 +11,11 @@ export class AppController {
   }
 
   @Get()
+  getGreet(): string {
+    return this.appService.getGreet();
+  }
+
+  @Get()
   getBye(): string {
     return this.appService.getBye();
   }
