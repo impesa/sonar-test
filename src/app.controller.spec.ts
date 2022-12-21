@@ -21,6 +21,9 @@ describe('AppController', () => {
     it('should return "Hi World!"', () => {
       expect(appController.getGreet()).toBe('Hi World!');
     });
+    it('should return "Hi Other!"', () => {
+      expect(appController.getOther()).toBe('Hi Other!');
+    });
     it('should return "Bye World!"', () => {
       expect(appController.getBye()).toBe('Bye World!');
     });
