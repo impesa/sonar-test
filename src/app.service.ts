@@ -8,8 +8,11 @@ export class AppService {
   getGreet(): string {
     return 'Hi World!';
   }
-  getOther(): string {
-    return 'Hi Other!';
+  getOther1(): string {
+    return 'Hi Other 1!';
+  }
+  getOther2(): string {
+    return 'Hi Other 2!';
   }
   getBye(): string {
     return 'Bye World!';

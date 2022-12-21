@@ -16,8 +16,13 @@ export class AppController {
   }
 
   @Get()
-  getOther(): string {
-    return this.appService.getOther();
+  getOther1(): string {
+    return this.appService.getOther1();
+  }
+
+  @Get()
+  getOther2(): string {
+    return this.appService.getOther2();
   }
 
   @Get()
